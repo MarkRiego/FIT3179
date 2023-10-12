@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/MarkRiego/FIT3179/main/patent_radar.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {
+      "type": "line",
+      "line": true,
+      "point": true
+    },
+    "encoding": {
+      "color": {"field": "Category", "type": "nominal"},
+      "theta": {"field": "Category", "type": "ordinal"},
+      "radius": {"field": "Count", "type": "quantitative"},
+      "detail": {"field": "Category", "type": "nominal"}
+    },
+    "config": {"axis": {"grid": false}},
+    "title": "Tesla Patents Radar Chart"
+  }
