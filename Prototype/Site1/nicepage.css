@@ -3,11 +3,7 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
- #radar{
-  position: relative;
-  top: -700px;
-  left: 50px;
-}
+
 
 .fr-clearfix::after {
   clear: both;

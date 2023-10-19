@@ -3,11 +3,14 @@
     "config": {
       "view": {
          "stroke": "transparent"
+      },
+      "title": {
+        "fontSize": 36
       }
     },
-    "width": 800,
-    "height": 450,
-    "title": "Tesla Charger Locations",
+    "width": 1400,
+    "height": 775,
+    "title": {"text": "Tesla Charger Locations", "color": "lightgrey"},
     "projection": {"type": "equalEarth"},
     "background": null,
     "layer": [
@@ -24,7 +27,7 @@
     
     {
     "data": {
-              "url": "https://raw.githubusercontent.com/MarkRiego/FIT3179/main/tesla_lat_long.csv"
+              "url": "https://raw.githubusercontent.com/MarkRiego/MarkRiego.github.io/main/tesla_lat_long.csv"
             },
             "projection": {
               "type": "equalEarth"
@@ -32,19 +35,26 @@
             "mark": "circle",
             "encoding": {
               "longitude": {
-                "field": "longitude",
+                "field": "Longitude",
                 "type": "quantitative"
               },
               "latitude": {
-                "field": "latitude",
+                "field": "Latitude",
                 "type": "quantitative"
               },
-              "size": {"value": 0.5
+              "size": {"value": 8
               },
-              "color": { "field": "Type", "type": "nominal" }
-              
+              "color": { "field": "Type", "type": "nominal",  "legend": { "titleColor": "lightgrey", "labelColor": "lightgrey", "labelFontSize": 15}},
+              "tooltip" : [
+
+                {"field": "City"},
+                {"field": "Country"},
+                {"field": "Type"}
+
+              ]
             }
     }
+
     
     ]
     }
