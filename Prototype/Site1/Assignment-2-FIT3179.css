@@ -11,6 +11,13 @@
   left: 100px;
 }
 
+#area_chart {
+
+  position: relative;
+  top: -400px;
+  left: 650px;
+}
+
 .u-section-1 {
   background-image: url("images/Model3.jpg");
   background-position: 50% 0%;

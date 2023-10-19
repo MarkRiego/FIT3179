@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Tesla Model Sales Over Time",
+  "background": null,
+  "config": {
+    "axis": {
+      "labelColor": "lightgrey",
+      "titleColor": "lightgrey"
+    }
+  },
+  "title": {"text": "Tesla Model Sales Over Time", "color": "lightgrey", "fontSize": 36},
+  "data": {
+    "url": "https://raw.githubusercontent.com/MarkRiego/MarkRiego.github.io/main/sales_data.csv"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "line": {"color": "red"},
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 0.7,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "transparent"},
+            {"offset": 0.6, "color": "red"}
+          ]
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "y": {
+          "aggregate": "sum",
+          "field": "Model 3/Y",
+          "type": "quantitative",
+          "title": "Sales",
+          "legend": {"title": "Model 3/Y Sales"}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "line": {"color": "blue"},
+        "color": {
+          "x1": 1.5,
+          "y1": 1,
+          "x2": 0,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {"offset": 0, "color": "transparent"},
+            {"offset": 1, "color": "blue"}
+          ]
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "y": {
+          "aggregate": "sum",
+          "field": "Model S/X",
+          "type": "quantitative",
+          "title": "Sales",
+          "legend": {"title": "Model S/X Sales"}
+        }
+      }
+    }
+  ],
+  "width": 700,
+  "height": 400
+}

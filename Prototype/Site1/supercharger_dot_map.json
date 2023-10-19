@@ -7,8 +7,10 @@
       "title": {
         "fontSize": 36
       }
+      
     },
     "width": 1400,
+    
     "height": 775,
     "title": {"text": "Tesla Charger Locations", "color": "lightgrey"},
     "projection": {"type": "equalEarth"},
