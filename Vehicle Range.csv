@@ -1,11 +1,11 @@
-﻿Model,EPA Combined Driving Range (km),
-Lucid Air,830,
-Tesla Model S,652,
-Hyundai Ioniq 6,581,
-Tesla Model 3,576,
-Mercedes-Benz EQS,563,
-Tesla Model X,560,
-Tesla Model Y,531,
-GMC Hummer EV Pickup,529,
-Rivian R1T,528,
-BMW iX,521,
+﻿Model,EPA Combined Driving Range (km),Brand
+Lucid Air,830,Non-Tesla
+Tesla Model S,652,Tesla
+Hyundai Ioniq 6,581,Non-Tesla
+Tesla Model 3,576,Tesla
+Mercedes-Benz EQS,563,Non-Tesla
+Tesla Model X,560,Tesla
+Tesla Model Y,531,Tesla
+GMC Hummer EV Pickup,529,Non-Tesla
+Rivian R1T,528,Non-Tesla
+BMW iX,521,Non-Tesla

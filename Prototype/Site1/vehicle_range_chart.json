@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/MarkRiego/MarkRiego.github.io/main/Vehicle%20Range.csv"
+    },
+    "width": 500,
+    "height": 500,
+    "mark": {
+      "type": "bar",
+      "opacity": 0.5
+    },
+    "encoding": {
+      "x": {
+        "field": "EPA Combined Driving Range (km)",
+        "type": "quantitative",
+        "title": "EPA Combined Driving Range (km)",
+        "axis": {"grid": false, "titleColor": "lightgrey", "labelColor": "lightgrey"}
+      },
+      "y": {
+        "field": "Model",
+        "type": "nominal",
+        "title": "Car Model",
+        "sort": "-x",
+        "axis": {"titleColor": "lightgrey", "labelColor": "lightgrey"}
+      }
+      
+      
+    },
+    "title": {
+      "text": "Car Models and Their EPA Combined Driving Range",
+      "color": "lightgrey"
+    },
+    "config": {
+      "background": "transparent",
+      "axis": {
+        "domainWidth": 1,
+        "domainColor": "lightgrey",
+        "labelFontSize": 12
+      }
+    }
+  }
+  

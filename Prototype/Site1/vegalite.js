@@ -12,3 +12,8 @@ var sales = "sales_area_chart.json";
 vegaEmbed("#area_chart", sales).then(function(result) {
 
 }).catch(console.error);
+
+var range = "vehicle_range_chart.json";
+vegaEmbed("#bar_chart", range).then(function(result) {
+
+}).catch(console.error);

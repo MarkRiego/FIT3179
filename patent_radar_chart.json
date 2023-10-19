@@ -4,6 +4,7 @@
     "width": 800,
     "height": 800,
     "padding": 200,
+    
     "autosize": {"type": "none", "contains": "padding"},
   
     "signals": [
@@ -18,11 +19,10 @@
           {"key": "Autonomous Vehicles", "value": 132, "category": 0},
           {"key": "Battery Technology", "value": 263, "category": 0},
           {"key": "Vehicle Charging", "value": 75, "category": 0},
-          {"key": "Computer Systems", "value": 14, "category": 0},
+          {"key": "Miscellaneous", "value": 129, "category": 0},
           {"key": "Design", "value": 90, "category": 0},
-          {"key": "Electric Motors", "value": 47, "category": 0},
-          {"key": "Energy Generation & Storage", "value": 307, "category": 0},
-          {"key": "Manufacturing Automation", "value": 58, "category": 0}
+          {"key": "Energy Generation & Storage", "value": 307, "category": 0}
+
   
           
         ]
@@ -107,7 +107,7 @@
                 "text": {"signal": "datum.datum.value"},
                 "align": {"value": "center"},
                 "baseline": {"value": "middle"},
-                "fill": {"value": "black"}
+                "fill": {"value": "lightgrey"}
               }
             }
           }
@@ -159,7 +159,7 @@
                 "value": "bottom"
               }
             ],
-            "fill": {"value": "black"},
+            "fill": {"value": "lightgrey"},
             "fontWeight": {"value": "bold"}
           }
         }
