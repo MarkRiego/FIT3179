@@ -7,7 +7,7 @@
     "url": "https://raw.githubusercontent.com/MarkRiego/MarkRiego.github.io/main/sales_data.csv"
   },
   "title": {
-    "text": "Your Chart Title Goes Here",
+    "text": "Tesla Vehicle Sales since 2012",
     "color": "lightgrey"
   },
   "config": {
